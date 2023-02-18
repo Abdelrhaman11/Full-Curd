@@ -1,0 +1,117 @@
+<html>
+
+<head>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+ <div class="crud">
+
+
+
+  <div class="head">
+
+
+    <h2>crud</h2>
+    <p>product management system</p>
+
+
+  </div>
+
+
+<div class="inputs">
+  <input type="text" id="title" placeholder="text">
+  <div class="price">
+    <input onkeyup="getTotal()"  type="number" id="price" placeholder="price">
+    <input onkeyup="getTotal()"  type="number" id="taxes" placeholder="taxes">
+    <input onkeyup="getTotal()"  type="number" id="ads" placeholder="ads">
+    <input onkeyup="getTotal()"  type="number" id="discount" placeholder="discount">
+    <small  id="total"></small>
+  </div>
+  <input type="number" placeholder="count" id="count">
+  <input type="text" placeholder="category" id="category">
+  <button id="submit">Create</button>
+
+</div>
+
+
+
+<div class="outputs">
+  <div class="searchBlock">
+    <input onkeyup="searchData()" type="text" id="search" placeholder="Search">
+    <div class="btnSearch">
+      <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+      <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="deleteAll">
+
+    <!-- <button>delete All</button> -->
+
+</div>
+
+
+
+<table>
+
+  <tr>
+    <th>id</th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discount</th>
+    <th>total</th>
+    <th>category</th>
+    <th>updata</th>
+    <th>delete</th>
+  </tr>
+<tbody id="tbody">
+
+
+  <!-- <tr>
+    <td>1</td>
+    <td>samsung</td>
+    <td>2000</td>
+    <td>100</td>
+    <td>100</td>
+    <td>100</td>
+    <td>2100</td>
+    <td>phone</td>
+    <td><button id="updata">updata</button></td>
+    <td><button id="delete">delete</button></td>
+  </tr> -->
+
+
+
+</tbody>
+
+</table>
+
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+    <script src="js/mine.js"></script>
+</body>
+
+</html>
